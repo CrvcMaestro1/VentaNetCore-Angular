@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="60c27571-9672-44f6-bfae-3ce96a8d8beb" name="General" linkedPackageId="9d1813a4-8445-4925-9b00-c8d2c4ab920b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0c69482e-0e8a-4b19-8d83-e297853fd6c8">
+      <profileInstance Id="c8b7d979-5448-44d2-aee7-630b622f116b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="833359bb-d02a-4d73-941c-487773bae5da">
+      <profileInstance Id="5bca5001-25ff-4154-81a3-9ddcc10fe347" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="b4beef18-29fc-4400-b5cf-d1b14b9a72b3" name="WS Venta .Net Core" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a1ab5a5e-72b1-46c6-aed4-f8fbd8a270e6" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="da4c45f9-7862-470e-a76b-ae464b853675" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="eb442f33-fe14-4e0d-a069-03763756ca07" />
+            <suppliersInternal>
+              <dependency Id="1a85a9d1-3450-4d90-b348-1dc7f4759b82" name="Consultas">
+                <providedInterfaceMoniker Id="56f3d866-1acc-42e3-acc9-ff4a8a0c69e1" LastKnownName="Port1" />
+                <elementDefinition Id="9c3c4a63-3374-4925-8267-09e37b17857a" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="f8fd3600-f5bc-4f53-a93e-16af7a62d17a" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="cf574242-177f-4402-a291-2ed3b89f095e" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="b3ca33e4-e9aa-4bd9-9b97-975645e6baf9" />
+            <suppliersInternal>
+              <dependency Id="16e763b5-7aff-454c-81f3-7919caead2b2" name="Enviar correos">
+                <providedInterfaceMoniker Id="3f584df4-a9bc-4fe3-8041-cc9b6d6eb9e2" LastKnownName="Port1" />
+                <elementDefinition Id="a3333729-70a3-4c1d-bf07-233e567aa5ed" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="dfdb85fb-4b15-4268-b651-825695ef5371" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface Id="d83e7442-e499-42f2-9b31-13a8c257be75" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="5343c221-a395-4f20-bc41-439dc624b705" />
+            <type_NamedElement>
+              <interfaceMoniker Id="4cf58349-6dc7-4660-b7e8-25d5412057f0" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="c5feef6d-de36-48af-90ee-79733356d290" name="Port4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ef94dc01-b140-4836-940a-fce24d521804" />
+            <type_NamedElement>
+              <interfaceMoniker Id="8f97684a-f4ba-4b48-a8e4-dec7137e26c2" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="61f2452e-6922-4387-b71b-6ebf34715daa" name="Venta Angular" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fd4f4498-8178-492a-8e97-fe64d37c5e5e" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="6bbd1364-c7e4-4b22-bd54-d021f3b9e4a1" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="802a9b6d-b7d2-4d39-a0ae-dd0b1c069a55" />
+            <suppliersInternal>
+              <dependency Id="404af973-783c-44a9-93bd-6abf052b047a" name="HTTP / JSON / JWT">
+                <providedInterfaceMoniker Id="d83e7442-e499-42f2-9b31-13a8c257be75" LastKnownName="Port3" />
+                <elementDefinition Id="9d7f142b-2ac0-493b-8c4a-7b1bc36e6bb4" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="ff2b8a8d-66cb-4285-bdfd-fa3e013c1f22" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="f69b255c-62b1-439c-9d2b-7d7c420e09f8" name="Venta App Xamarin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ce5e9720-3995-47f0-a700-866e5e8b8759" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="556b5180-18f7-43ac-91d2-1c03fb62549c" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="fdd1c6aa-7ede-4d72-8607-c28ec22c7009" />
+            <suppliersInternal>
+              <dependency Id="81ba427e-05cf-4297-af18-b0147cbeb4d6" name="HTTP / JSON / JWT">
+                <providedInterfaceMoniker Id="c5feef6d-de36-48af-90ee-79733356d290" LastKnownName="Port4" />
+                <elementDefinition Id="7a4711fb-8128-4ac3-985f-b9f2bf55ff9f" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="b1bdeb68-bef8-4468-b696-e44cd6bff00b" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d156442b-7466-445a-8e8e-a2963115ee28" name="BD Sql Server" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fe1bd476-d9ae-4a1d-9533-b850c9706c5b" />
+        <ownedAttributesInternal>
+          <providedInterface Id="56f3d866-1acc-42e3-acc9-ff4a8a0c69e1" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="4ccce2ce-b866-4e5e-8435-9c0525b04a05" />
+            <type_NamedElement>
+              <interfaceMoniker Id="0d38e9d5-54d3-4030-aa13-9a6211dc33a2" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="0cdb0f68-69f4-4829-9e43-abffdeadcaff" name="Servidor SMTP" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6bc5d188-b84f-4927-a574-e5741b245f30" />
+        <ownedAttributesInternal>
+          <providedInterface Id="3f584df4-a9bc-4fe3-8041-cc9b6d6eb9e2" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ad5804c6-58bc-4559-a5ba-94215d274acd" />
+            <type_NamedElement>
+              <interfaceMoniker Id="98a307e1-af14-474a-89db-3f9e16fae492" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="0d38e9d5-54d3-4030-aa13-9a6211dc33a2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2ff9d904-afc2-4c0e-a117-38058ab08391" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="f8fd3600-f5bc-4f53-a93e-16af7a62d17a" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="08994aed-81bb-4804-9f8d-cd5d0a339b41" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="98a307e1-af14-474a-89db-3f9e16fae492" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="68298055-5cba-463e-aa64-efda039e27d4" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="dfdb85fb-4b15-4268-b651-825695ef5371" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6dd56c80-347a-45ce-9ae3-4a61835879c4" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="4cf58349-6dc7-4660-b7e8-25d5412057f0" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8ecb3f4b-e251-4fd7-aaad-0c9c32cba100" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="ff2b8a8d-66cb-4285-bdfd-fa3e013c1f22" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="40ce2d8a-40d7-4e1b-8713-51919236dab7" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="8f97684a-f4ba-4b48-a8e4-dec7137e26c2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="217c06b5-78e7-4c3d-aa65-671bb58a6f5d" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="b1bdeb68-bef8-4468-b696-e44cd6bff00b" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6a577f50-a4fe-45fe-b846-5a2165f6c273" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="9d1813a4-8445-4925-9b00-c8d2c4ab920b" name="ModelingSistemaVentas">
+    <elementDefinition Id="2fc3c81c-e87b-4839-89aa-44e0ff59acff" />
+  </package>
+</componentModel>

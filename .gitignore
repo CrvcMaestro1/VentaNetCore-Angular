@@ -1,4 +1,10 @@
-./AppVentaAngular/app/node_modules/**
-./WSVenta/WSVenta/bin/**
-./WSVenta/WSVenta/obj/**
+AppVentaAngular/app/node_modules/
+AppVentaAngular/app/node_modules/**
+AppVentaAngular/app/.angular/
+AppVentaAngular/app/.angular/**
+WSVenta/WSVenta/bin/
+WSVenta/WSVenta/bin/**
+WSVenta/WSVenta/obj/
+WSVenta/WSVenta/obj/**
 .gitignore
+.vs/

@@ -1,3 +1,4 @@
-./AppVentaAngular/app/node_modules/*
-./WSVenta/WSVenta/bin/*
-./WSVenta/WSVenta/obj/*
+./AppVentaAngular/app/node_modules/**
+./WSVenta/WSVenta/bin/**
+./WSVenta/WSVenta/obj/**
+.gitignore

@@ -16,9 +16,9 @@ export class LoginComponent implements OnInit {
         private router: Router,
         private formBuilder: FormBuilder
     ) {
-        // if (this.apiauthService.usuarioData) {
-        //     this.router.navigate(['/']);
-        // }
+        if (this.apiauthService.usuarioData) {
+            this.router.navigate(['/']);
+        }
     }
 
     ngOnInit(): void {
@@ -26,7 +26,6 @@ export class LoginComponent implements OnInit {
     }
 
     login() {
-        console.log(this.loginForm.value);
         this.apiauthService.login(this.loginForm.value).subscribe(response => {
             if (response.exito === 1) {
                 this.router.navigate(['/']);

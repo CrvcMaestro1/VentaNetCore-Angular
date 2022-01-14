@@ -1,8 +1,9 @@
 
-<mat-drawer-container>
-    <mat-drawer #drawer mode="side">
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer mode="side" class="example-sidenav">
         <a [routerLink]="['/home']">Inicio</a>
         <a [routerLink]="['/cliente']">Cliente</a>
+        <a [routerLink]="['/venta']">Venta</a>
         <a (click)="logout()" *ngIf="usuario">Cerrar sesión</a>
     </mat-drawer>
     <div>

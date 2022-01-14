@@ -13,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WSVenta.Models.Common;
 using WSVenta.Services;
+using WSVenta.Tools;
 
 namespace WSVenta
 {
@@ -39,7 +40,11 @@ namespace WSVenta
                         builder.WithMethods("*");
                     });
             });
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.Converters.Add(new IntToStringConverter());
+                options.JsonSerializerOptions.Converters.Add(new DecimalToStringConverter());
+            });
 
             var appSettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingsSection);

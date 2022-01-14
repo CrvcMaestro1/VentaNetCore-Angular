@@ -6,5 +6,7 @@ WSVenta/WSVenta/bin/
 WSVenta/WSVenta/bin/**
 WSVenta/WSVenta/obj/
 WSVenta/WSVenta/obj/**
+WSVenta/.vs/
+WSVenta/.vs/**
 .gitignore
 .vs/
